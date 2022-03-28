@@ -1,23 +1,27 @@
-body{
+body,html{
     margin: 0;
+    padding: 0;
 }
 .wrap{
     width: 100%;
     height: 100%;
 }
 .banner{
+    width: 100%;
     background-image: url('../images/background.png');
     display: flex;
     flex-flow: column;
     align-items: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     padding-bottom: 34vh;
 }
 .header{
     margin-top: 1vh;
-    width: 80vw;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .leftNav, .rightNav{
@@ -116,9 +120,11 @@ body{
 }
 .newModels{
     display: flex;
+    justify-content: center;
 }
 .newModel{
-    width: 19vw;
+    width: 22vw;
+    min-width: 280px;
     height: 53vh;
     background:#E4F9FF;
     box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
@@ -130,6 +136,10 @@ body{
 .newModel2{
     margin-left: 1.5vw;
     margin-right: 1.5vw;
+}
+.newModel img{
+    width: 19vw;
+    min-width: 300px;
 }
 
 .bestModelsWrap{
@@ -154,7 +164,8 @@ body{
     align-items: center;
 }
 .bestModel{
-    width: 19vw;
+    width: 22vw;
+    min-width: 280px;
     height: 53vh;
     background:#E4F9FF;
     box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
@@ -167,6 +178,10 @@ body{
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     margin-top: 20vh;
+}
+.bestModel img{
+    width: 19vw;
+    min-width: 300px;
 }
 .leftArrow{
     margin-right:2vw ;
@@ -210,4 +225,50 @@ body{
 .partners{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partners img{
+    margin:2vw;
+    min-width: 15vw;
+}
+
+.socMediasWrap{
+    background: #121212;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.socMediasWrap h1{
+    margin-top: 5vh;
+    font-weight: 400;
+    color: #CDF3FF;
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+}
+.socMedias{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.socMedias img{
+    margin:2vw;
+    width: 60px;
+    height: 60px;
+}
+
+
+.footerWrap{
+    width: 100%;
+    background: #0C0C0C;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.footer{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
 }
