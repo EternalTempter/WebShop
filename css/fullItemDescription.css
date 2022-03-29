@@ -1,0 +1,77 @@
+@import url(main.css);
+
+.wrap{
+    background: #1B1A1A;
+}
+.header{
+    background: #1B1A1A;
+}
+.contentWrap{
+    background: #121212;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+.mainInfoWrap{
+    display: flex;
+}
+.mainInfo{
+    width: 25vw;
+    display: flex;
+    flex-flow: column;
+}
+.mainInfoWrap img{
+    width: 100%;
+    max-height: 700px;
+}
+.mainInfo h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    color: #E4F9FF;
+    text-align: center;  
+}
+.mainInfoPrice{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #53D9FF;
+    text-align: right;
+    margin: 0 2vw 0 0;
+
+}
+.buy{
+    background-image: url(../images/button.png);
+    width: 330px;
+    height: 70px; 
+    background-repeat: no-repeat;  
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E4F9FF;
+    margin-top: 2vh;
+    margin-bottom: 9vh;
+    align-self: center;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background: #E4F9FF;
+}
+.description{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: right;
+    color: #E4F9FF;
+    margin-right: 2vw;
+}
+

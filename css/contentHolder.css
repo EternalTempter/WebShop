@@ -51,7 +51,7 @@
 .card{
     justify-content: space-evenly;
     width: 20vw;
-    height: 65vh;
+    padding-bottom: 1vh 1vh 1vh 1vh;
     min-width: 240px;
     min-height: 300px;
     max-height: 580px;
@@ -85,7 +85,7 @@
 }
 .card span{
    margin-left: auto;
-   margin-right: 1vw;
+   margin-right: 2vw;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;

@@ -1,3 +1,15 @@
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1B1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 200px 7px rgba(205, 243, 255, 0.9);
+    border-radius: 3px;
+}
 body,html{
     margin: 0;
     padding: 0;
@@ -136,7 +148,6 @@ body,html{
 .newModel{
     width: 22vw;
     min-width: 230px;
-    height: 53vh;
     background:#E4F9FF;
     box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
     border-radius: 5px;
@@ -178,7 +189,6 @@ body,html{
 .bestModel{
     width: 22vw;
     min-width: 280px;
-    height: 53vh;
     background:#E4F9FF;
     box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
     border-radius: 5px;
@@ -192,7 +202,7 @@ body,html{
     margin-top: 20vh;
 }
 .bestModel img{
-    width: 19vw;
+    width: 16vw;
     min-width: 300px;
 }
 .leftArrow{
