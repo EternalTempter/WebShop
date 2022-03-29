@@ -1,8 +1,43 @@
 @import url(main.css);
 
+.wrap{
+    background: #1B1A1A; 
+}
 .header{
     background: #1B1A1A;
 }
+.contentWrap{
+    background: #121212;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.categories{
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categoryButton{
+    margin:2.4vw;
+    display: block;
+    background: #E4F9FF;
+    border-radius: 25px 0px;
+    width: 11vw;
+    height: 8vh;
+    min-width: 100px;
+    color: #000000;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -54,4 +89,9 @@
 .card img{
     width: 14vw;
     margin-top: 1vw;
+}
+
+.on{
+    background:#02AFBA;
+    color: #FFFFFF;
 }
