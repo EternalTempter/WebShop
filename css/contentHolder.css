@@ -1,0 +1,57 @@
+@import url(main.css);
+
+.header{
+    background: #1B1A1A;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.card{
+    width: 20vw;
+    height: 45vh;
+    min-width: 300px;
+    min-height: 380px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background:#E4F9FF ;
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    margin:1vw;
+}
+.card h3{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #102425;
+}
+.card p{
+    margin:1vh 0vh 1vh 0vh;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;   
+    color: #103A3D;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.card span{
+    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #02AFBA;
+}
+.card img{
+    width: 14vw;
+    margin-top: 1vw;
+}
