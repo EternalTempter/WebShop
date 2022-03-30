@@ -48,6 +48,9 @@
     padding-left: 10vw;
     padding-right: 10vw;
 }
+.content a{ 
+    text-decoration: none;
+}
 .card{
     justify-content: space-evenly;
     width: 20vw;

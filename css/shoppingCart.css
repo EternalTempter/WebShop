@@ -1,0 +1,42 @@
+@import url(main.css);
+
+.wrap{
+    background: #1B1A1A;
+}
+.header{
+    background: #1B1A1A;
+}
+.contentWrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.contentWrap h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;   
+    color: #FFFFFF;
+}
+.shopCartItemLine{
+    height: 4px;
+    width: 70vw;
+    background: #FFFFFF;
+}
+.shopCartItem{
+    display: flex;
+}
+.shopCartItemHolder{
+    width: 15vw;
+    min-width: 280px;
+}
+.shopCartItemHolder img{
+    width: 14vw;
+    min-width: 270px;
+}
+.shopCartInfoHolder{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}

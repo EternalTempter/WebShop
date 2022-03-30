@@ -37,11 +37,13 @@ function buildCards(data,watchesModel){
     content.innerHTML = '';
         Array.from(Object.keys(data.catalog[watchesModel])).forEach(watchesName => {
             content.innerHTML += 
-            `<div class="card">
-                <img src="${data.catalog[watchesModel][watchesName].imageUrl}">
-                <h3>${watchesName}</h3>
-                <p>${data.catalog[watchesModel][watchesName].desc}</p>
-                <span>${data.catalog[watchesModel][watchesName].price}</span>
-            </div>`;
+            `<a href="fullItemDescription.html">
+                <div class="card">
+                    <img src="${data.catalog[watchesModel][watchesName].imageUrl}">
+                    <h3>${watchesName}</h3>
+                    <p>${data.catalog[watchesModel][watchesName].desc}</p>
+                    <span>${data.catalog[watchesModel][watchesName].price}</span>
+                </div>
+                </a>`;
         });
 }
