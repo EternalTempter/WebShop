@@ -1,0 +1,28 @@
+@import url(main.css);
+
+.wrap{
+    background: #1B1A1A;
+}
+.header{
+    background: #1B1A1A;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    grid-template-rows: 2fr 1.5fr 1.5fr;
+    grid-gap: 2vw;
+}
+.contentItem{
+    background: red;
+    border: 3px solid green; 
+    padding: 5vw;
+    color: #1B1A1A;
+    text-align: center;
+    line-height: 30px;
+    font-size: 43px;
+}
+.contentItem3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
