@@ -1,20 +1,30 @@
 window.addEventListener('DOMContentLoaded',function(){
 
-    let serverData;
+    let allServerData;
+    let userServerData;
 
     showDataOnPage();
 
     function showDataOnPage(){
-        getData();
+        getAllData();
+        getUserData();
         setTimeout(() => buildCards(),200);
     }
-    function getData(){
+    function getAllData(){
         fetch('data.json')
             .then(response => response.json())
-            .then(json => setData(json));
+            .then(json => setAllData(json));
     }
-    function setData(data){
-        serverData = data;
+    function getUserData(){
+        fetch('shopBag.json')
+            .then(response => response.json())
+            .then(json => setUserData(json));
+    }
+    function setAllData(data){
+        allServerData = data;
+    }
+    function setUserData(data){
+        userServerData = data;
     }
         
     function buildCards(){
