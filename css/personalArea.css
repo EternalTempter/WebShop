@@ -14,7 +14,7 @@
     align-items: center;
 }
 .content{
-    max-width: 1170px;
+    width: 1170px;
     min-width: 1170px;
     display: flex;
     align-items: center;
@@ -23,18 +23,17 @@
 .leftContent{
     display: flex;
     flex-wrap: wrap;
-}
-/* .rightContent{
-
-} */
+}   
 .contentItem{
     background: #E4F9FF;
     box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
 .userInfo{
-    width: 25vw;
+    width: 24.5vw;
     min-height: 250px;
+    max-width: 470px;
+    max-height: 250px;
 }
 .userHeader{
     display: flex;
@@ -57,9 +56,11 @@
     margin-left: 1vw;
 }
 .delivery{
-    width: 19.5vw;
+    width: 19.3vw;
     min-width: 270px;
     min-height: 250px;
+    max-width: 370px;
+    max-height: 250px;
     margin:0 30px 0 30px;
     display: flex;
     flex-flow: column;
@@ -72,6 +73,8 @@
 .discount{
     width: 14vw;
     min-height: 456px;
+    min-width: 270px;
+    max-width: 270px;
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -148,8 +151,9 @@
 }
 .cards{
     position: relative;
-    width: 25vw;
+    width: 24.5vw;
     min-height:176px;
+    max-width: 470px;
     margin-top: 30px;
     padding-bottom: 10px;
 }
@@ -164,9 +168,12 @@
     margin-left: 4vw;
 }
 .purchases{
-    width: 19.5vw;
+    display: flex;
+    flex-flow: column;
+    max-width: 370px;
+    width: 19.3vw;
     min-height:176px;
-    margin:30px 0px 0px 30px;
+    margin:30px 30px 0px 30px;
 }
 .purchases h2{
     margin-left: 40px;
@@ -177,19 +184,22 @@
     margin-top: 10px;
 }
 .purchases img{
-    margin-top: -15px; 
-    margin-left: 270px;
+    align-self: flex-end;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
 }
 .bottomContent{
     display: flex;
 }
 .purchasesHistory{
-    width: 34vw;
+    width: 39vw;
     min-height: 176px;
+    max-width: 670px;
     margin-top: 30px;
 }
 .moneySpent{
-    width: 25vw;
+    width: 28vw;
+    max-width: 470px;
     min-height: 176px;
     margin:30px 0px 0px 30px;
 }

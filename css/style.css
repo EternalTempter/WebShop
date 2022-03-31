@@ -152,6 +152,7 @@ body,html{
     width: 19vw;
     min-width: 260px;
     max-height: 450px;
+    max-width: 365px;
 }
 
 .bestModelsWrap{
