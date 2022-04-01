@@ -15,16 +15,17 @@ document.querySelector('.breguetCategoryButton').addEventListener('click',functi
     showDataOnPage('breguet',document.querySelector('.breguetCategoryButton'));
 });
 
+setClickEvents();
 
-document.querySelectorAll('.getFullItemDescription').forEach(elem => {
-    elem.addEventListener('click', function(){
-        localStorage.setItem('imageUrl',JSON.stringify(elem.childNodes[1].childNodes[1].src));
-        localStorage.setItem('name',JSON.stringify(elem.childNodes[1].childNodes[3].textContent));
-        localStorage.setItem('price',JSON.stringify(elem.childNodes[1].childNodes[7].textContent));
+function setClickEvents(){
+    document.querySelectorAll('.getFullItemDescription').forEach(elem => {
+        elem.addEventListener('click', function(){
+            localStorage.setItem('imageUrl',JSON.stringify(elem.childNodes[1].childNodes[1].src));
+            localStorage.setItem('name',JSON.stringify(elem.childNodes[1].childNodes[3].textContent));
+            localStorage.setItem('price',JSON.stringify(elem.childNodes[1].childNodes[7].textContent));
+        });
     });
-});
-
-
+}
 function showDataOnPage(watchesModel,buttonToTurnOn){
     getData();
     setTimeout(() => buildCards(serverData,watchesModel),200);
@@ -56,4 +57,5 @@ function buildCards(data,watchesModel){
                 </div>
             </a>`;
         });
+        setClickEvents();
 }

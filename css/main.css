@@ -380,7 +380,7 @@ body,html{
     .newModel img, .bestModel img{
         width: 30vw;
         min-width: 280px;
-        max-height: 300px;
+        max-height: 370px;
     }
     .bestModel{
         margin-top: 10vw;
