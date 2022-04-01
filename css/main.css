@@ -79,10 +79,11 @@ body,html{
     font-family: 'Roboto', sans-serif;
 }
 .watchCollectionButton{
-    display: block;
+    transition: 0.6s;
+    position: relative;
     width: 330px;
     height: 68px;
-    background-image: url('../images/button.png');
+    /* background-image: url('../images/button.png'); */
     margin-top: 3vh;
     color: #FFFFFF;
     font-size: 24px;
@@ -90,6 +91,61 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.watchCollectionButton:hover{
+    color: #CDF3FF;
+    transition: 0.6s;
+    background:rgba(255, 255, 255, 0.05);
+}
+.watchCollectionButton::before{
+    content: "";
+    transition: 0.6s;
+    display: block;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 4px solid #CDF3FF;
+    border-left: 4px solid #CDF3FF;
+}
+.watchCollectionButton::after{
+    content: "";
+    transition: 0.6s;
+    display: block;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 4px solid #CDF3FF;
+    border-bottom: 4px solid #CDF3FF;
+}
+.watchCollectionButton:hover::after{
+    content: "";
+    display: block;
+    width: 98%;
+    height: 94%;
+    transition: 0.6s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 4px solid #CDF3FF;
+    border-bottom: 4px solid #CDF3FF;
+    border-radius: 0 0 10% 0;
+}
+.watchCollectionButton:hover::before{
+    content: "";
+    display: block;
+    width: 98%;
+    height: 94%;
+    transition: 0.6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 4px solid #CDF3FF;
+    border-left: 4px solid #CDF3FF; 
+    border-radius: 10% 0 0 0;
 }
 
 .infoblockWrap{
