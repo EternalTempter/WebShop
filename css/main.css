@@ -39,13 +39,13 @@ body,html{
 }
 .logo{
     max-width: 200px;
-    width: 15vw;
+    width: 12vw;
 }
 .leftNav, .rightNav{
     list-style-type: none;
 }
-.aboutUs{
-    margin-top: 8px;
+.leftNav li{
+    margin-bottom: 10px;
 }
 .leftNav li, .rightNav li{
     float: left;
@@ -58,35 +58,42 @@ body,html{
 }
 .leftNav a, .rightNav a{
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.25vw;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+
 .aboutUs{
     margin-right: 7vw;
 }
 .navIcons img{
     margin-right: 2vw;
+    width: 2vw;
+    min-width: 25px;
 }
 .menu{
     display: none;
 }
 .banner h1{
+    text-align: center;
     font-weight: 400;
     margin-top: 32vh;
     color: #CDF3FF;
-    font-size: 50px;
+    font-size: 2.2vw;
     font-family: 'Roboto', sans-serif;
 }
 .watchCollectionButton{
     transition: 0.6s;
     position: relative;
-    width: 330px;
-    height: 68px;
+    width: 18vw;
+    height: 8vh;
+    min-height: 54px;
+    max-height: 86px;
+    min-width: 200px;
     /* background-image: url('../images/button.png'); */
     margin-top: 3vh;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.30vw;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -101,8 +108,11 @@ body,html{
     content: "";
     transition: 0.6s;
     display: block;
-    width: 100px;
-    height: 40px;
+    width: 4.9vw;
+    height: 4.5vh;
+    min-height: 25px;
+    max-height: 45px;
+    min-width: 60px;
     position: absolute;
     left: 0;
     top: 0;
@@ -113,8 +123,11 @@ body,html{
     content: "";
     transition: 0.6s;
     display: block;
-    width: 100px;
-    height: 40px;
+    width: 4.9vw;   
+    height: 4.5vh;
+    min-height: 25px;
+    max-height: 45px;
+    min-width: 60px;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -163,17 +176,17 @@ body,html{
     margin-top: 7vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 34px;
+    font-size: 1.85vw;
     font-family: 'Roboto', sans-serif;
 }
 .infoblockContent p{
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 1.55vw;
     font-family: 'Roboto', sans-serif;
 }
 .infoblockContent a{
     color: #CDF3FF;
-    font-size: 26px;
+    font-size: 1.7vw;
     font-family: 'Roboto', sans-serif;
     right: auto;
     align-self: flex-end;
@@ -194,7 +207,7 @@ body,html{
     margin-bottom: 9vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 42px;
+    font-size: 2.2vw;
     font-family: 'Roboto', sans-serif;
 }
 .newModels{
@@ -235,7 +248,7 @@ body,html{
     margin-bottom: 9vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 42px;
+    font-size: 2.2vw;
     font-family: 'Roboto', sans-serif;
 }
 .bestModels{
@@ -298,7 +311,7 @@ body,html{
     margin-bottom: 2vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 34px;
+    font-size: 1.9vw;
     font-family: 'Roboto', sans-serif;
 }
 .partners{
@@ -310,7 +323,7 @@ body,html{
 .partners img{
     margin:2vw;
     width: 13vw;
-    min-width: 140px;
+    min-width: 100px;
 }
 
 .socMediasWrap{
@@ -324,7 +337,7 @@ body,html{
     margin-top: 5vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 34px;
+    font-size: 1.9vw;
     font-family: 'Roboto', sans-serif;
 }
 .socMedias{
@@ -403,12 +416,36 @@ body,html{
     .sliderPoints{
         display: none;
     }
+    .bestModels{
+        margin-top: -50px;
+    }
+
+    .infoblockContent{
+        width: 80vw;
+    }
+    .newModel, .bestModel{
+        width: 18vw;
+        min-width: 220px;
+        margin: 3vw;
+    }
+    .newModel img, .bestModel img{
+        width: 25vw;
+        min-width: 220px;
+        max-height: 370px;
+    }
+    .newModelsWrap h1{
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+    }
 
     .header{
         justify-content: space-between;
     }
     .leftNav a, .rightNav a{
-        font-size: 20px;
+        font-size: 1.9vw;
+    }
+    .banner h1{
+        font-size: 3.4vw;
     }
     .aboutUs{
         margin-right: 9vw;
@@ -417,6 +454,7 @@ body,html{
         margin-left: 5vw;
         min-width: 100px;
     }
+
 }
 @media screen and (max-width:768px) {
     .leftNav, .rightNav{
@@ -428,38 +466,35 @@ body,html{
     .newModels{
         flex-flow: column;
     }
-    .newModel, .bestModel{
-        width: 40vw;
-        min-width: 260px;
-        margin: 3vw;
-    }
-    .newModel img, .bestModel img{
-        width: 30vw;
-        min-width: 280px;
-        max-height: 370px;
-    }
     .bestModel{
         margin-top: 10vw;
     }
     .banner h1{
         font-size: 32px;
     }
+    .infoblockContent a{
+        font-size: 15px;
+    }
     .watchCollectionButton{
         font-size: 14px;
     }
     .infoblockContent h1, .newModelsWrap h1, .bestModelsWrap h1, .partnersWrap h1, .socMediasWrap h1{
-        font-size: 24px;
+        font-size: 18px;
         text-align: center;
     }
+    .bestModelsWrap h1{
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
     .infoblockContent p{
-        font-size: 18px;
+        font-size: 14px;
         text-align: center;
     }
     .footerNav{
         padding-left: 0;
     }
     .footerNav a{
-        font-size: 18px;
+        font-size: 14px;
     }
     .footerContacts p{
         font-size: 14px;
@@ -469,7 +504,7 @@ body,html{
         height: 30px;
     }
     .copyright{
-        font-size: 18px;
+        font-size: 14px;
     }
     .sliderArrow img{
         width: 20px;
