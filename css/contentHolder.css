@@ -56,7 +56,7 @@
     width: 20vw;
     padding-bottom: 1vh 1vh 1vh 1vh;
     min-width: 240px;
-    min-height: 300px;
+    min-height: 350px;
     max-height: 580px;
     display: flex;
     flex-flow: column;
@@ -67,19 +67,29 @@
     margin:1vw;
 }
 .card h3{
+    display: block;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     margin:0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5vw;
     color: #102425;
 }
 .card p{
-    margin:1vh 0vh 1vh 0vh;
+    display: block;
+    height: 5.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0vh 0vh 1vh 0vh;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.2vw;
     line-height: 26px;
     text-align: center;   
     color: #103A3D;
@@ -107,15 +117,36 @@
     color: #FFFFFF;
 }
 
-
+@media screen and (max-width:1439px) {
+    .card h3{
+        font-size: 22px;
+    }
+    .card p{
+        font-size: 18px;
+    }
+    .card span{
+        font-size: 18px;
+    }
+    .card{
+        min-height: 300px;
+    }
+}
 @media screen and (max-width:768px) {
     .card h3{
+        height: 48px;
         font-size: 18px;
     }
     .card p{
         font-size: 16px;
+        height: 28px;
     }
     .card span{
         font-size: 18px;
+    }
+    .card{
+        min-height: 300px;
+    }
+    .categoryButton{
+        font-size: 20px;
     }
 }

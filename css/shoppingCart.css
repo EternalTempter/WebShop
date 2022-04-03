@@ -55,7 +55,7 @@
     align-items: flex-start;
     margin:0vh 0vw 0vh 4.5vw;
     width: 40%;
-    min-width: 280px;
+    min-width: 400px;
 }
 .shopCartInfoHolder h3{
     font-family: 'Roboto', sans-serif;
@@ -70,6 +70,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 22px;  
+    width: 19vw;
+    min-width: 250px;
     color: #FFFFFF;
     margin:3.5vh 0vw 7vh 0vw;
 }
@@ -84,6 +86,7 @@
     margin-top: 5vh;
     display: flex;
     align-items: center;
+    width: 40%;
 }
 .shopCartAmount p{
     font-family: 'Roboto', sans-serif;
@@ -113,12 +116,32 @@
     .shopCartItemLine{
        visibility: hidden;
     }
+    .shopCartItem{
+        margin-left: 5vw;
+    }
 }
 @media screen and (max-width:768px) {
     .shopCartItem{
         margin-left: 0;
+        align-self: center;
+    }
+    .shopCartInfoHolder{
+        margin-left:0;
     }
     .shopCartInfoHolder span{
        margin:0 auto;
     }
+    .shopCartInfoHolder{
+        align-items: center;
+        text-align: center;
+    }
+    .shopCartAmount{
+        align-self: flex-start;
+    }
+}
+@media screen and (max-width:649px) {
+    .shopCartInfoHolder{
+        margin-top: 5vh;
+    }
+
 }

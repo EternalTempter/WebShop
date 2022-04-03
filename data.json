@@ -22,7 +22,7 @@
                 "imageUrl": "images/RolexNightExpress.png"
             },
             "Rolex Full Gold":{
-                "desc": "Чистое золото, белый циферблат",
+                "desc": "Чистое золото, бело кварцевый циферблат",
                 "price": "75 000 €",
                 "imageUrl": "images/RolexFullGold.png"
             },
@@ -42,7 +42,7 @@
                 "imageUrl": "images/RolexOysterPerpetual.png"
             },
             "Pearlmaster":{
-                "desc": "Жемчуг, алмазный циферблат",
+                "desc": "Белый жемчуг, алмазный циферблат",
                 "price": "155 000 €",
                 "imageUrl": "images/RolexPearlmaster.png"
             },
