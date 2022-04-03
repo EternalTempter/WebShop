@@ -16,7 +16,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;   
+    font-size: 2vw;   
     color: #FFFFFF;
     margin-top: 10vh;
     margin-bottom: 5vh;
@@ -25,6 +25,13 @@
     height: 4px;
     width: 70vw;
     background: #FFFFFF;
+}
+.miniShopCartItemLine{
+    height: 4px;
+    width: 50vw;
+    background: #FFFFFF;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
 }
 .shopCartItem{
     display: flex;
@@ -57,11 +64,11 @@
     width: 40%;
     min-width: 400px;
 }
-.shopCartInfoHolder h3{
+.shopCartInfoHolder h3, .totalPriceWrap{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.6vw;
     color: #E4F9FF;
     margin:0vh 0vw 0vh 0vw;
 }
@@ -69,7 +76,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;  
+    font-size: 1.15vw;  
     width: 19vw;
     min-width: 250px;
     color: #FFFFFF;
@@ -79,7 +86,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;  
+    font-size: 2vw;  
     color: #53D9FF;
 }
 .shopCartAmount{
@@ -92,7 +99,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 1.35vw;
     color: #FFFFFF;
     margin: 0;
 }
@@ -100,20 +107,45 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.7vw;
     color: #FFFFFF;
 }
 .shopCartAmount img{
     margin:0 2vw 0 2vw; 
 }
-
+.totalPrice{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #53D9FF;  
+}
+.orderButton{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
 @media screen and (max-width:1439px) {
-    .shopCartItem{
-        margin-left: 10vw;
+    .contentWrap h1{
+        font-size: 24px;
+    }
+    .shopCartInfoHolder h3, .totalPriceWrap{
+        font-size: 22px;
+    }
+    .shopCartInfoHolder p{
+        font-size: 16px;
+    }
+    .shopCartInfoHolder span, .totalPrice{
+        font-size: 24px;
+    }
+    .shopCartAmount p{
+        font-size: 18px;
+    }
+    .shopCartAmount span{
+        font-size: 20px;
     }
 }
 @media screen and (max-width:900px) {
-    .shopCartItemLine{
+    .shopCartItemLine, .miniShopCartItemLine{
        visibility: hidden;
     }
     .shopCartItem{
