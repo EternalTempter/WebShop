@@ -61,6 +61,12 @@ body,html{
     font-size: 1.25vw;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    transition: 0.6s;
+}
+.leftNav a:hover, .rightNav a:hover{
+    transition: 0.6s;
+    color: #CDF3FF;
+    text-shadow: 3px 3px 40px #CDF3FF;
 }
 
 .aboutUs{
@@ -76,25 +82,32 @@ body,html{
     display: none;
 }
 .banner h1{
+    opacity: 1;
+    position: relative;
     text-align: center;
     font-weight: 400;
     margin-top: 32vh;
     color: #CDF3FF;
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-family: 'Roboto', sans-serif;
+    animation: appearLeft 1s;
+}
+.watchCollectionButton{
+    opacity: 1;
+    position: relative;
+    animation: appearRight 1s;
 }
 .watchCollectionButton, .buy, .orderButton{
     transition: 0.6s;
     position: relative;
-    width: 18vw;
-    height: 8vh;
+    width: 17vw;
+    height: 7vh;
     min-height: 54px;
-    max-height: 86px;
+    max-height: 80px;
     min-width: 200px;
-    /* background-image: url('../images/button.png'); */
     margin-top: 3vh;
     color: #FFFFFF;
-    font-size: 1.30vw;
+    font-size: 1.2vw;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -112,7 +125,7 @@ body,html{
     width: 4.9vw;
     height: 4.5vh;
     min-height: 25px;
-    max-height: 48px;
+    max-height: 74px;
     min-width: 60px;
     position: absolute;
     left: 0;
@@ -127,7 +140,7 @@ body,html{
     width: 4.9vw;   
     height: 4.5vh;
     min-height: 25px;
-    max-height: 48px;
+    max-height: 74px;
     min-width: 60px;
     position: absolute;
     right: 0;
@@ -146,7 +159,7 @@ body,html{
     bottom: 0;
     border-right: 4px solid #CDF3FF;
     border-bottom: 4px solid #CDF3FF;
-    border-radius: 0 0 10% 0;
+    /* border-radius: 0 0 10% 0; */
 }
 .watchCollectionButton:hover::before, .buy:hover::before, .orderButton:hover::before{
     content: "";
@@ -159,7 +172,7 @@ body,html{
     top: 0;
     border-top: 4px solid #CDF3FF;
     border-left: 4px solid #CDF3FF; 
-    border-radius: 10% 0 0 0;
+    /* border-radius: 10% 0 0 0; */
 }
 
 .infoblockWrap{
@@ -177,17 +190,17 @@ body,html{
     margin-top: 7vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 1.85vw;
+    font-size: 1.65vw;
     font-family: 'Roboto', sans-serif;
 }
 .infoblockContent p{
     color: #FFFFFF;
-    font-size: 1.55vw;
+    font-size: 1.3vw;
     font-family: 'Roboto', sans-serif;
 }
 .infoblockContent a{
     color: #CDF3FF;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     font-family: 'Roboto', sans-serif;
     right: auto;
     align-self: flex-end;
@@ -208,7 +221,7 @@ body,html{
     margin-bottom: 9vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-family: 'Roboto', sans-serif;
 }
 .newModels{
@@ -249,7 +262,7 @@ body,html{
     margin-bottom: 9vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-family: 'Roboto', sans-serif;
 }
 .bestModels{
@@ -338,7 +351,7 @@ body,html{
     margin-top: 5vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 1.9vw;
+    font-size: 1.75vw;
     font-family: 'Roboto', sans-serif;
 }
 .socMedias{
@@ -509,5 +522,26 @@ body,html{
     }
     .sliderArrow img{
         width: 20px;
+    }
+}
+
+@keyframes appearLeft {
+    from{
+        opacity: 0;
+        left: -100%;
+    }
+    to{
+        opacity: 1;
+        left: 0;
+    }
+}
+@keyframes appearRight {
+    from{
+        opacity: 0;
+        left: 600%;
+    }
+    to{
+        opacity: 1;
+        left: 0;
     }
 }
