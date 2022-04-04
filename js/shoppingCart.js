@@ -68,9 +68,9 @@ window.addEventListener('DOMContentLoaded',function(){
         document.querySelectorAll('.setPlus').forEach(plus => {
             plus.addEventListener('click',function(){
                 plus.previousElementSibling.textContent = 
-                (Number(plus.previousElementSibling.textContent) < 10) 
-                ? (Number(plus.previousElementSibling.textContent) + 1) 
-                : Number(plus.previousElementSibling.textContent);
+                    (Number(plus.previousElementSibling.textContent) < 10) 
+                    ? (Number(plus.previousElementSibling.textContent) + 1) 
+                    : Number(plus.previousElementSibling.textContent);
                 document.querySelector('.totalPrice').textContent = `${getSumOfAllWatches()} €`;
             });
         });
