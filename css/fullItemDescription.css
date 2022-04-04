@@ -18,12 +18,12 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.95vw;
+    font-size: 1.5vw;
     text-align: center;  
     color: #E4F9FF;
 }
 .labelLine{
-    width: 20vw;
+    width: 16vw;
     height: 3px;
     background: #E4F9FF;
 }
@@ -40,7 +40,7 @@
     flex-flow: column;
 }
 .mainInfoWrap img{
-    width: 22vw; 
+    width: 20vw; 
     margin-right: 10vw;
     height: 75%;
     min-width: 245px;
@@ -50,7 +50,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.4vw;
+    font-size: 2vw;
     color: #E4F9FF;
     text-align: center;  
 }
@@ -58,7 +58,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 30px;
     color: #53D9FF;
     text-align: right;
     margin: 0 2vw 0 0;
@@ -77,10 +77,11 @@
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.25vw;
+    font-size: 1.05vw;
     text-align: right;
     color: #E4F9FF;
     margin-right: 2vw;
+    line-height: 1.4em;
 }
 .modelMechanism{
     margin-left: 1vw;
@@ -98,17 +99,17 @@
     flex-flow: column;
     align-items: flex-start;
     margin-top: 2vh;
-    min-width: 290px;
+    min-width: 240px;
 }
 .characteristic img{
     width: 20vw;
-    min-width: 290px;
+    min-width: 240px;
 }
 .characteristic h1{
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.75vw;
+    font-size: 1.25vw;
     color: #E4F9FF;
     margin-left: 0;
 }
@@ -116,7 +117,7 @@
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.35vw;
+    font-size: 1.05vw;
     color: #E4F9FF;
     margin-left: 0;
 }
@@ -124,7 +125,7 @@
     font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.15vw;
+    font-size: 0.95vw;
     color: #E4F9FF;
     margin: 0;
 }
@@ -141,31 +142,31 @@
     justify-content: center;
 }
 .gallery img{
-    width: 19.5vw;
+    width: 16.5vw;
     min-width: 240px;
     margin-top: 2vw;
 }
 @media screen and (max-width:1024px) {
     .mainInfo h1{
-        font-size: 20px;
-    }
-    .description{
-        font-size: 14px;
-    }
-    .mainInfoPrice{
-        font-size: 20px;
-    }
-    .contentWrap h2{
-        font-size: 20px;
-    }
-    .characteristic h1{
-        font-size: 18px;
-    }
-    .characteristic h3{
         font-size: 16px;
     }
-    .characteristic p{
+    .description{
+        font-size: 12px;
+    }
+    .mainInfoPrice{
+        font-size: 16px;
+    }
+    .contentWrap h2{
+        font-size: 16px;
+    }
+    .characteristic h1{
         font-size: 14px;
+    }
+    .characteristic h3{
+        font-size: 14px;
+    }
+    .characteristic p{
+        font-size: 12px;
     }
 }
 @media screen and (max-width:594px) {

@@ -26,13 +26,13 @@
     display: block;
     background: #E4F9FF;
     border-radius: 25px 0px;
-    width: 11vw;
-    height: 8vh;
+    width: 10vw;
+    height: 7vh;
     min-width: 100px;
     color: #000000;
     font-family: 'Roboto',sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,10 +53,10 @@
 }
 .card{
     justify-content: space-evenly;
-    width: 20vw;
+    width: 18vw;
     padding-bottom: 1vh 1vh 1vh 1vh;
-    min-width: 240px;
-    min-height: 350px;
+    min-width: 220px;
+    min-height: 330px;
     max-height: 580px;
     display: flex;
     flex-flow: column;
@@ -64,7 +64,7 @@
     background:#E4F9FF ;
     box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
     border-radius: 10px;
-    margin:1vw;
+    margin:1.1vw;
 }
 .card h3{
     display: block;
@@ -76,12 +76,12 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     color: #102425;
 }
 .card p{
     display: block;
-    height: 5.4vw;
+    height: 3.4vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +89,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     line-height: 26px;
     text-align: center;   
     color: #103A3D;
@@ -102,11 +102,11 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 26px;
     color: #02AFBA;
 }
 .card img{
-    width: 14vw;
+    width: 11vw;
     margin-top: 1vw;
     min-width: 160px;
     max-width: 250px;
@@ -119,32 +119,32 @@
 
 @media screen and (max-width:1439px) {
     .card h3{
-        font-size: 22px;
+        font-size: 20px;
     }
     .card p{
-        font-size: 18px;
+        font-size: 16px;
     }
     .card span{
         font-size: 18px;
     }
     .card{
-        min-height: 300px;
+        min-height: 240px;
     }
 }
 @media screen and (max-width:768px) {
     .card h3{
         height: 48px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .card p{
-        font-size: 16px;
+        font-size: 14px;
         height: 28px;
     }
     .card span{
-        font-size: 18px;
+        font-size: 16px;
     }
     .card{
-        min-height: 300px;
+        min-height: 240px;
     }
     .categoryButton{
         font-size: 20px;

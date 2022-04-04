@@ -39,7 +39,7 @@ body,html{
 }
 .logo{
     max-width: 200px;
-    width: 12vw;
+    width: 10vw;
 }
 .leftNav, .rightNav{
     list-style-type: none;
@@ -101,13 +101,13 @@ body,html{
     transition: 0.6s;
     position: relative;
     width: 17vw;
-    height: 7vh;
+    height: 6vh;
     min-height: 54px;
     max-height: 80px;
-    min-width: 200px;
+    min-width: 160px;
     margin-top: 3vh;
     color: #FFFFFF;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -123,9 +123,9 @@ body,html{
     transition: 0.6s;
     display: block;
     width: 4.9vw;
-    height: 4.5vh;
+    height: 3.5vh;
     min-height: 25px;
-    max-height: 74px;
+    max-height: 78px;
     min-width: 60px;
     position: absolute;
     left: 0;
@@ -138,9 +138,9 @@ body,html{
     transition: 0.6s;
     display: block;
     width: 4.9vw;   
-    height: 4.5vh;
+    height: 3.5vh;
     min-height: 25px;
-    max-height: 74px;
+    max-height: 78px;
     min-width: 60px;
     position: absolute;
     right: 0;
@@ -152,7 +152,7 @@ body,html{
     content: "";
     display: block;
     width: 98%;
-    height: 101%;
+    height: 93%;
     transition: 0.6s;
     position: absolute;
     right: 0;
@@ -165,7 +165,7 @@ body,html{
     content: "";
     display: block;
     width: 98%;
-    height: 101%;
+    height: 93%;
     transition: 0.6s;
     position: absolute;
     left: 0;
@@ -190,17 +190,17 @@ body,html{
     margin-top: 7vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 1.65vw;
+    font-size: 1.35vw;
     font-family: 'Roboto', sans-serif;
 }
 .infoblockContent p{
     color: #FFFFFF;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     font-family: 'Roboto', sans-serif;
 }
 .infoblockContent a{
     color: #CDF3FF;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: 'Roboto', sans-serif;
     right: auto;
     align-self: flex-end;
@@ -221,7 +221,7 @@ body,html{
     margin-bottom: 9vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 2vw;
+    font-size: 1.7vw;
     font-family: 'Roboto', sans-serif;
 }
 .newModels{
@@ -229,7 +229,7 @@ body,html{
     justify-content: center;
 }
 .newModel{
-    width: 22vw;
+    width: 20vw;
     min-width: 230px;
     background:#E4F9FF;
     box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
@@ -243,8 +243,8 @@ body,html{
     margin-right: 1.5vw;
 }
 .newModel img{
-    width: 19vw;
-    min-width: 260px;
+    width: 14vw;
+    min-width: 230px;
     max-height: 450px;
     max-width: 320px;
 }
@@ -262,7 +262,7 @@ body,html{
     margin-bottom: 9vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 2vw;
+    font-size: 1.7vw;
     font-family: 'Roboto', sans-serif;
 }
 .bestModels{
@@ -271,7 +271,7 @@ body,html{
     align-items: center;
 }
 .bestModel{
-    width: 22vw;
+    width: 18vw;
     min-width: 280px;
     background:#E4F9FF;
     box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
@@ -286,8 +286,8 @@ body,html{
     margin-top: 20vh;
 }
 .bestModel img{
-    width: 16vw;
-    min-width: 300px;
+    width: 14vw;
+    min-width: 240px;
 }
 .leftArrow{
     margin-right:2vw ;
@@ -302,8 +302,8 @@ body,html{
     margin-top: 6vh;
 }
 .sliderPoint{
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 50%;
     background:#E4F9FF;
 }
@@ -325,7 +325,7 @@ body,html{
     margin-bottom: 2vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 1.9vw;
+    font-size: 1.6vw;
     font-family: 'Roboto', sans-serif;
 }
 .partners{
@@ -336,7 +336,7 @@ body,html{
 }
 .partners img{
     margin:2vw;
-    width: 13vw;
+    width: 9vw;
     min-width: 100px;
 }
 
@@ -351,7 +351,7 @@ body,html{
     margin-top: 5vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 1.75vw;
+    font-size: 1.55vw;
     font-family: 'Roboto', sans-serif;
 }
 .socMedias{
@@ -363,8 +363,8 @@ body,html{
 }
 .socMedias img{
     margin:2vw;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -391,27 +391,58 @@ body,html{
 }
 .footerNav a{
     color: #F3FCFF;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 .footerContacts{
     width: 18vw;
     color: #F3FCFF;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
 }
 .footerLogo img{
     margin-top: 2vh;
-    width: 15vw;
+    width: 12vw;
 }
 .copyright{
     color: #CDF3FF;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5vh;
 }
-
+@media screen and (max-width:1440px) {
+    .banner h1{
+        font-size: 26px;
+    }
+    .infoblockContent a{
+        font-size: 15px;
+    }
+    .watchCollectionButton, .buy, .orderButton{
+        font-size: 14px;
+    }
+    .infoblockContent h1, .newModelsWrap h1, .bestModelsWrap h1, .partnersWrap h1, .socMediasWrap h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    .bestModelsWrap h1{
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+    .infoblockContent p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .footerNav{
+        padding-left: 0;
+    }
+    .footerNav a{
+        font-size: 14px;
+    }
+    .footerContacts p{
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width:1024px) {
     .bestModel1{
@@ -459,7 +490,7 @@ body,html{
         font-size: 1.9vw;
     }
     .banner h1{
-        font-size: 3.4vw;
+        font-size: 22px;
     }
     .aboutUs{
         margin-right: 9vw;
@@ -484,7 +515,7 @@ body,html{
         margin-top: 10vw;
     }
     .banner h1{
-        font-size: 32px;
+        font-size: 20px;
     }
     .infoblockContent a{
         font-size: 15px;
