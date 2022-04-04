@@ -240,7 +240,7 @@ body,html{
     justify-content: center;
     transition: 0.7s;
 }
-.newModel::after{
+.newModel::before, .bestModel::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -249,10 +249,30 @@ body,html{
     background:rgba(7, 8, 9, 0.8);
     transition: 0.7s;
 }  
-.newModel:hover::after{
+.newModel:hover::before, .bestModel:hover::before{
     transition: 0.7s;
     height: 100%;
-}   
+}  
+.newModel::after, .bestModel::after{
+    content: "Производитель - Tissot Модель - Silver Quartz";
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 4.4vh;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.75s;
+    color: #CDF3FF;
+    font-size: 18px;
+}  
+.newModel:hover::after, .bestModel:hover::after{
+    bottom: 42%;
+    opacity: 1;
+    transition: 0.75s;
+}  
+.newModel:hover, .bestModel:hover{
+    box-shadow: 0px 6px 15px rgba(7, 8, 9, 0.9);
+} 
 .newModel2{
     margin-left: 1.5vw;
     margin-right: 1.5vw;
@@ -277,7 +297,7 @@ body,html{
     margin-bottom: 9vh;
     font-weight: 400;
     color: #CDF3FF;
-    font-size: 1.7vw;
+    font-size: 1.85vw;
     font-family: 'Roboto', sans-serif;
 }
 .bestModels{
@@ -286,6 +306,7 @@ body,html{
     align-items: center;
 }
 .bestModel{
+    position: relative;
     width: 18vw;
     min-width: 280px;
     background:#E4F9FF;
@@ -321,9 +342,30 @@ body,html{
     height: 1.1vw;
     border-radius: 50%;
     background:#E4F9FF;
+    transition: 0.4s;
+}
+.sliderPoint:hover{
+    transition: 0.4s;
+    background:#78E1FF;
 }
 .active{
     background:#78E1FF;
+}
+.rightArrow img, .leftArrow img{
+    transition: 0.6s;
+}
+/* .rightArrow img:hover{
+    margin-left: 2vw;
+    transition: 0.6s;
+}
+
+.leftArrow img:hover{
+    margin-right: 2vw;
+    transition: 0.6s;
+}  */
+
+.lowVisible{
+    opacity: 0.5;
 }
 
 
@@ -437,7 +479,7 @@ body,html{
         font-size: 14px;
     }
     .infoblockContent h1, .newModelsWrap h1, .bestModelsWrap h1, .partnersWrap h1, .socMediasWrap h1{
-        font-size: 18px;
+        font-size: 22px;
         text-align: center;
     }
     .bestModelsWrap h1{
@@ -457,6 +499,9 @@ body,html{
     .footerContacts p{
         font-size: 14px;
     }
+    .sliderArrow img{
+        width: 25px;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -471,13 +516,13 @@ body,html{
         margin-top: 10vh;
     }
     .sliderArrow{
-        margin-top: 10vh;
+        margin-top: 2vh;
     }
     .sliderPoints{
         display: none;
     }
     .bestModels{
-        margin-top: -50px;
+        margin-top: -10px;
     }
 
     .infoblockContent{
