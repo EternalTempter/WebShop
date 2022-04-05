@@ -54,15 +54,171 @@
 
         },
         "cartier": {
-            "Explorer 2":{
-                "desc": "Чистое золото, изумрудный циферблат",
+            "Ballon Bleu De Cartier":{
+                "desc": "Автоматический подзавод, розовое золото, кожа",
                 "price": "5 000 €",
-                "imageUrl": "images/RolexExplorer2.png"
+                "imageUrl": "images/cartier1.png"
             },
             "Rolex Silver Dream":{
-                "desc": "Чистое серебро, черно жемчужный циферблат",
+                "desc": "Ручной подзавод, розовое золото, бриллианты",
                 "price": "4 000 €",
-                "imageUrl": "images/RolexSilverDream.png"
+                "imageUrl": "images/cartier2.png"
+            },
+            "Rolex Pink Gold":{
+                "desc": "Розовое золото, изумрудный циферблат",
+                "price": "3 000 €",
+                "imageUrl": "images/RolexPinkGold.png"
+            },
+            "Rolex Night Express":{
+                "desc": "Розовое серебро, белый циферблат",
+                "price": "1 000 €",
+                "imageUrl": "images/RolexNightExpress.png"
+            },
+            "Rolex Full Gold":{
+                "desc": "Чистое золото, белый циферблат",
+                "price": "10 000 €",
+                "imageUrl": "images/RolexFullGold.png"
+            },
+            "Rolex Diamond Gold":{
+                "desc": "Золото высшей пробы, с гранеными алмазами",
+                "price": "6 000 €",
+                "imageUrl": "images/RolexDiamondGold.png"
+            },
+            "Sky Dweller":{
+                "desc": "Чистое золото, черно жемчужный циферблат",
+                "price": "7 000 €",
+                "imageUrl": "images/RolexSkyDweller.png"
+            },
+            "Oyster Perpetual":{
+                "desc": "Белое серебро, с розовым циферблатом",
+                "price": "5 000 €",
+                "imageUrl": "images/RolexOysterPerpetual.png"
+            },
+            "Pearlmaster":{
+                "desc": "Жемчуг, алмазный циферблат",
+                "price": "16 000 €",
+                "imageUrl": "images/RolexPearlmaster.png"
+            },
+            "Data-Date":{
+                "desc": "Белое золото, с синим циферблатом",
+                "price": "3 000 €",
+                "imageUrl": "images/RolexDataDate.png"
+            }
+        },
+        "tissot": {
+            "Ballon Bleu De Cartier":{
+                "desc": "Автоматический подзавод, розовое золото, кожа",
+                "price": "5 000 €",
+                "imageUrl": "images/cartier1.png"
+            },
+            "Rolex Silver Dream":{
+                "desc": "Ручной подзавод, розовое золото, бриллианты",
+                "price": "4 000 €",
+                "imageUrl": "images/cartier2.png"
+            },
+            "Rolex Pink Gold":{
+                "desc": "Розовое золото, изумрудный циферблат",
+                "price": "3 000 €",
+                "imageUrl": "images/RolexPinkGold.png"
+            },
+            "Rolex Night Express":{
+                "desc": "Розовое серебро, белый циферблат",
+                "price": "1 000 €",
+                "imageUrl": "images/RolexNightExpress.png"
+            },
+            "Rolex Full Gold":{
+                "desc": "Чистое золото, белый циферблат",
+                "price": "10 000 €",
+                "imageUrl": "images/RolexFullGold.png"
+            },
+            "Rolex Diamond Gold":{
+                "desc": "Золото высшей пробы, с гранеными алмазами",
+                "price": "6 000 €",
+                "imageUrl": "images/RolexDiamondGold.png"
+            },
+            "Sky Dweller":{
+                "desc": "Чистое золото, черно жемчужный циферблат",
+                "price": "7 000 €",
+                "imageUrl": "images/RolexSkyDweller.png"
+            },
+            "Oyster Perpetual":{
+                "desc": "Белое серебро, с розовым циферблатом",
+                "price": "5 000 €",
+                "imageUrl": "images/RolexOysterPerpetual.png"
+            },
+            "Pearlmaster":{
+                "desc": "Жемчуг, алмазный циферблат",
+                "price": "16 000 €",
+                "imageUrl": "images/RolexPearlmaster.png"
+            },
+            "Data-Date":{
+                "desc": "Белое золото, с синим циферблатом",
+                "price": "3 000 €",
+                "imageUrl": "images/RolexDataDate.png"
+            }
+        },        
+        "omega": {
+            "Ballon Bleu De Cartier":{
+                "desc": "Автоматический подзавод, розовое золото, кожа",
+                "price": "5 000 €",
+                "imageUrl": "images/cartier1.png"
+            },
+            "Rolex Silver Dream":{
+                "desc": "Ручной подзавод, розовое золото, бриллианты",
+                "price": "4 000 €",
+                "imageUrl": "images/cartier2.png"
+            },
+            "Rolex Pink Gold":{
+                "desc": "Розовое золото, изумрудный циферблат",
+                "price": "3 000 €",
+                "imageUrl": "images/RolexPinkGold.png"
+            },
+            "Rolex Night Express":{
+                "desc": "Розовое серебро, белый циферблат",
+                "price": "1 000 €",
+                "imageUrl": "images/RolexNightExpress.png"
+            },
+            "Rolex Full Gold":{
+                "desc": "Чистое золото, белый циферблат",
+                "price": "10 000 €",
+                "imageUrl": "images/RolexFullGold.png"
+            },
+            "Rolex Diamond Gold":{
+                "desc": "Золото высшей пробы, с гранеными алмазами",
+                "price": "6 000 €",
+                "imageUrl": "images/RolexDiamondGold.png"
+            },
+            "Sky Dweller":{
+                "desc": "Чистое золото, черно жемчужный циферблат",
+                "price": "7 000 €",
+                "imageUrl": "images/RolexSkyDweller.png"
+            },
+            "Oyster Perpetual":{
+                "desc": "Белое серебро, с розовым циферблатом",
+                "price": "5 000 €",
+                "imageUrl": "images/RolexOysterPerpetual.png"
+            },
+            "Pearlmaster":{
+                "desc": "Жемчуг, алмазный циферблат",
+                "price": "16 000 €",
+                "imageUrl": "images/RolexPearlmaster.png"
+            },
+            "Data-Date":{
+                "desc": "Белое золото, с синим циферблатом",
+                "price": "3 000 €",
+                "imageUrl": "images/RolexDataDate.png"
+            }
+        },
+        "breguet": {
+            "Ballon Bleu De Cartier":{
+                "desc": "Автоматический подзавод, розовое золото, кожа",
+                "price": "5 000 €",
+                "imageUrl": "images/cartier1.png"
+            },
+            "Rolex Silver Dream":{
+                "desc": "Ручной подзавод, розовое золото, бриллианты",
+                "price": "4 000 €",
+                "imageUrl": "images/cartier2.png"
             },
             "Rolex Pink Gold":{
                 "desc": "Розовое золото, изумрудный циферблат",

@@ -23,6 +23,7 @@ function setClickEvents(){
             localStorage.setItem('imageUrl',JSON.stringify(elem.childNodes[1].childNodes[1].src));
             localStorage.setItem('name',JSON.stringify(elem.childNodes[1].childNodes[3].textContent));
             localStorage.setItem('price',JSON.stringify(elem.childNodes[1].childNodes[7].textContent));
+            location.href = 'fullItemDescription.html';
         });
     });
 }
@@ -44,18 +45,23 @@ function setData(data){
 }
     
 function buildCards(data,watchesModel){
-    let content = document.querySelector('.content');
+    let content = document.querySelector('.content');   
+    console.log(serverData.catalog);
     content.innerHTML = '';
         Array.from(Object.keys(data.catalog[watchesModel])).forEach(watchesName => {
             content.innerHTML += 
-            `<a href="fullItemDescription.html" class="getFullItemDescription">
-                <div class="card">
-                    <img src="${data.catalog[watchesModel][watchesName].imageUrl}">
-                    <h3>${watchesName}</h3>
-                    <p>${data.catalog[watchesModel][watchesName].desc}</p>
-                    <span>${data.catalog[watchesModel][watchesName].price}</span>
-                </div>
-            </a>`;
-        });
+            `<div class="card getFullItemDescription">
+                    <div class="frontCard">
+                        <img src="${data.catalog[watchesModel][watchesName].imageUrl}">
+                        <h3>${watchesName}</h3>
+                        <p>${data.catalog[watchesModel][watchesName].desc}</p>
+                        <span>${data.catalog[watchesModel][watchesName].price}</span>
+                    </div>
+                    <div class="backCard">
+                        <p>Doloribus est nobis aperiam sequi incidunt illo consequatur. Quod molestias quaerat aliquam?</p>
+                        <a>Кликни по карте чтобы узнать подробнее</a>
+                    </div>
+                </div>`;
+            });
         setClickEvents();
 }

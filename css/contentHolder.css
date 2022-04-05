@@ -22,6 +22,7 @@
     justify-content: center;
 }
 .categoryButton{
+    transition: ease-in-out 0.7s;
     margin:2.4vw;
     display: block;
     background: #E4F9FF;
@@ -38,6 +39,10 @@
     justify-content: center;
     text-decoration: none;
 }
+.categoryButton:hover{
+    background: #02AFBA;
+    color: #E4F9FF;
+}
 
 .content{
     margin-top: 5vh;
@@ -52,19 +57,65 @@
     text-decoration: none;
 }
 .card{
-    justify-content: space-evenly;
+    position: relative;
     width: 18vw;
+    padding-top:11vh;
+    padding-bottom: 11vh;
     padding-bottom: 1vh 1vh 1vh 1vh;
     min-width: 220px;
     min-height: 330px;
     max-height: 580px;
+    margin:1.1vw;
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+.frontCard, .backCard{
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    background:#E4F9FF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;   
+    backface-visibility: hidden;
+    transition: ease-in-out 1s;  
+}
+.frontCard{
+    transform: perspective(580px) rotateY(0deg);
+    justify-content: space-evenly;
     display: flex;
     flex-flow: column;
     align-items: center;
-    background:#E4F9FF ;
-    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
-    margin:1.1vw;
+}
+.backCard{
+    transform: perspective(580px) rotateY(180deg);
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.backCard p{
+    font-family: 'Roboto', sans-serif;
+    color: #102425;
+    font-size: 18px;
+}
+.backCard a{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #02AFBA;
+}
+/* .card:hover{
+    transform: perspective(280px) rotateY(180deg)
+} */
+.card:hover > .frontCard{
+    transform: perspective(580px) rotateY(-180deg);
+}
+.card:hover > .backCard{
+    transform: perspective(580px) rotateY(0deg);  
 }
 .card h3{
     display: block;
@@ -128,7 +179,7 @@
         font-size: 18px;
     }
     .card{
-        min-height: 240px;
+        min-height: 300px;
     }
 }
 @media screen and (max-width:768px) {
@@ -144,7 +195,7 @@
         font-size: 16px;
     }
     .card{
-        min-height: 240px;
+        min-height: 300px;
     }
     .categoryButton{
         font-size: 20px;
