@@ -30,18 +30,19 @@ window.addEventListener('DOMContentLoaded',function(){
     function buildCards(){
         let content = document.querySelector('.contentWrap');
         content.innerHTML = '<h1>Корзина</h1>';
-            Array.from(Object.keys(allServerData.catalog.rolex)).forEach(watchesName => {
+            Array.from(Object.keys(allServerData.catalog)).forEach(watchesCompany => {
+                Array.from(Object.keys(allServerData.catalog[watchesCompany])).forEach(watchesName => {
                 if(userServerData.includes(watchesName)){
                 content.innerHTML += 
                 `<div class="shopCartItemLine"></div>
                     <div class="shopCartItem">
                     <div class="shopCartItemHolder">
-                        <img src="${allServerData.catalog.rolex[watchesName].imageUrl}">
+                        <img src="${allServerData.catalog[watchesCompany][watchesName].imageUrl}">
                     </div>
                     <div class="shopCartInfoHolder">
                         <h3>${watchesName}</h3>
-                        <p>${allServerData.catalog.rolex[watchesName].desc}</p>
-                        <span id="watchesPrice">${allServerData.catalog.rolex[watchesName].price}</span>
+                        <p>${allServerData.catalog[watchesCompany][watchesName].desc}</p>
+                        <span id="watchesPrice">${allServerData.catalog[watchesCompany][watchesName].price}</span>
                         <div class="shopCartAmount">
                             <p>Количество</p>
                             <img src="images/minus.png" class="setMinus">
@@ -50,16 +51,17 @@ window.addEventListener('DOMContentLoaded',function(){
                         </div>
                     </div>
                 </div>`;
-
                 }
             });
+        });
         content.innerHTML += '<div class="miniShopCartItemLine"></div>';
         content.innerHTML += `<p class="totalPriceWrap">Итого: <span class="totalPrice">${getSumOfAllWatches()} €</span></p>`;
         content.innerHTML += '<div class="orderButton">Заказать</div>';
         document.querySelectorAll('.setMinus').forEach(minus => {
             minus.addEventListener('click',function(){
+                (Number(minus.nextElementSibling.textContent) > 1) ? minus.parentNode.previousElementSibling.textContent = (Number(minus.parentNode.previousElementSibling.textContent.replace(' €','').replace(' ',''))) - (Number(minus.parentNode.previousElementSibling.textContent.replace(' €','').replace(' ','')) / Number(minus.nextElementSibling.textContent)) + ' €' : (Number(minus.parentNode.previousElementSibling.textContent.replace(' €','').replace(' ','')));
                 minus.nextElementSibling.textContent = 
-                        (Number(minus.nextElementSibling.textContent) > 0) 
+                        (Number(minus.nextElementSibling.textContent) > 1) 
                         ? (Number(minus.nextElementSibling.textContent) - 1) 
                         : Number(minus.nextElementSibling.textContent);
                 document.querySelector('.totalPrice').textContent = `${getSumOfAllWatches()} €`;
@@ -67,6 +69,7 @@ window.addEventListener('DOMContentLoaded',function(){
         });
         document.querySelectorAll('.setPlus').forEach(plus => {
             plus.addEventListener('click',function(){
+                (Number(plus.previousElementSibling.textContent) < 10) ? plus.parentNode.previousElementSibling.textContent = (Number(plus.parentNode.previousElementSibling.textContent.replace(' €','').replace(' ',''))) + (Number(plus.parentNode.previousElementSibling.textContent.replace(' €','').replace(' ','')) / Number(plus.previousElementSibling.textContent)) + ' €' : (Number(plus.parentNode.previousElementSibling.textContent.replace(' €','').replace(' ','')));
                 plus.previousElementSibling.textContent = 
                     (Number(plus.previousElementSibling.textContent) < 10) 
                     ? (Number(plus.previousElementSibling.textContent) + 1) 

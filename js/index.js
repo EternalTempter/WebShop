@@ -46,7 +46,6 @@ function setData(data){
     
 function buildCards(data,watchesModel){
     let content = document.querySelector('.content');   
-    console.log(serverData.catalog);
     content.innerHTML = '';
         Array.from(Object.keys(data.catalog[watchesModel])).forEach(watchesName => {
             content.innerHTML += 
