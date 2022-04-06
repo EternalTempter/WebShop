@@ -58,8 +58,8 @@ function buildCards(data,watchesModel){
                         <span>${data.catalog[watchesModel][watchesName].price}</span>
                     </div>
                     <div class="backCard">
-                        <p>Doloribus est nobis aperiam sequi incidunt illo consequatur. Quod molestias quaerat aliquam?</p>
-                        <a>Кликни по карте чтобы узнать подробнее</a>
+                        <p>Часы появились в результате тесного сотрудничества Rolex с миром исследований.Они порой находятся в условиях, в которых отваживается работать далеко не каждый. В течение многих лет часовая марка тестировала эти часы на прочность в реальных условиях, снаряжая полярные, горные и спелеологические экспедиции.</p>
+                        <a href="#">Подробнее...</a>
                     </div>
                 </div>`;
             });

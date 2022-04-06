@@ -90,23 +90,8 @@
 }
 .backCard{
     transform: perspective(580px) rotateY(180deg);
-    justify-content: space-evenly;
     display: flex;
     flex-flow: column;
-    align-items: center;
-}
-.backCard p{
-    font-family: 'Roboto', sans-serif;
-    color: #102425;
-    font-size: 18px;
-}
-.backCard a{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    color: #02AFBA;
 }
 /* .card:hover{
     transform: perspective(280px) rotateY(180deg)
@@ -166,6 +151,25 @@
 .on{
     background:#02AFBA;
     color: #FFFFFF;
+}
+
+.backCard p{
+    font-family: 'Roboto', sans-serif;
+    color: #102425;
+    font-size: 16px;
+    padding-top: 11.5vh;
+    text-align: left;   
+}
+.backCard a{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    padding-top: 31vh;  
+    text-align: right;  
+    margin-right: 1.5vw;
 }
 
 @media screen and (max-width:1439px) {
