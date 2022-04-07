@@ -19,19 +19,14 @@ else if($_GET['do'] == 'deleteData'){
             unset($jsonData[$i]);
         }
     }
-    $newJsonData = [];
-    foreach($jsonData as $key => $value){
-        // if($value !== null){
-            array_push($newJsonData,$value);
-        // }
-    }
     file_put_contents('shopBag.json',null);
-    for($i = 0;$i < count($jsonData);++$i){
-        $replaced = substr($jsonData[$i],0,-2);
-        file_put_contents('shopBag.json', $replaced.PHP_EOL, FILE_APPEND);
+    $replacedArray = [];
+    foreach ($jsonData as $key => $value) {
+        file_put_contents('shopBag.json', $value, FILE_APPEND);
+        array_push($replacedArray,$value);
     }
-    // echo json_encode($jsonData);
-    }
+    echo json_encode($replacedArray);
+}
 else if($_GET['do'] == 'getShopBagItems'){
     $jsonData = file('shopBag.json');
     $newData = [];

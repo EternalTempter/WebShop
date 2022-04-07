@@ -18,11 +18,10 @@ burgerMenuAuthorization.addEventListener('click', () => {
     openModalWindow(authModalWindow,authModalWindowBackground);
 });
 document.querySelector('.enterAccount').addEventListener('click', function(){
-    console.log('asdf');
     closeModalWindow(modalWindow,modalWindowBackground);
     setTimeout(() => {
         openModalWindow(authModalWindow,authModalWindowBackground);
-    }, 400)
+    }, 400);
 });
 closeAuthModalWindow.addEventListener('click', () => {
     closeModalWindow(authModalWindow,authModalWindowBackground);
@@ -54,20 +53,10 @@ function closeModalWindow(currentModalWindow,currentModalWindowBackground){
         currentModalWindowBackground.classList.remove('hide');
     }, 800)
     modalWindowOpen = false;
-    if(location.href == 'http://webshop/main.html' || location.href == 'http://webshop/main.html#'){
-        document.querySelector('.banner').style.paddingBottom = '34vh';
-        document.querySelector('.mainLabel').classList.toggle('off');
-        document.querySelector('.watchCollectionButton').classList.toggle('off');
-    }
 }
 function openModalWindow(currentModalWindow,currentModalWindowBackground){
     currentModalWindowBackground.classList.add('opened');
     currentModalWindow.classList.add('opened');
-    if(location.href == 'http://webshop/main.html' || location.href == 'http://webshop/main.html#'){
-        document.querySelector('.banner').style.paddingBottom = '82.3vh';
-        document.querySelector('.mainLabel').classList.toggle('off');
-        document.querySelector('.watchCollectionButton').classList.toggle('off');
-    }
     modalWindowOpen = true;
     document.body.style.overflow = 'hidden';
 }

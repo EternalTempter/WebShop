@@ -60,7 +60,7 @@
 }
 .delivery{
     width: 19.3vw;
-    min-width: 290px;
+    min-width: 300px;
     min-height: 250px;
     max-width: 370px;
     max-height: 250px;
@@ -76,7 +76,7 @@
 .discount{
     width: 14vw;
     min-height: 456px;
-    min-width: 270px;
+    min-width: 300px;
     max-width: 270px;
     display: flex;
     align-items: center;
@@ -177,7 +177,7 @@
     max-width: 370px;
     width: 19.3vw;
     min-height:176px;
-    min-width: 290px;
+    min-width: 300px;
     margin:30px 30px 0px 30px;
 }
 .purchases h2{
@@ -237,7 +237,7 @@
 @media screen and (max-width:768px) {
     .leftContent{
         flex-flow: column;
-        margin-left: 35%;
+        margin-left: 34.5%;
     }
     .purchases{
         margin: 30px 0px 30px 0px;
@@ -251,40 +251,7 @@
     .delivery{
         margin: 30px 0px 0px 0px;
     }
+    .purchasesHistory{
+        margin-top: 0;
+    }
 }
-/* .contentItem6 h2{
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    color: #010404;
-    margin-left: 40px;
-    margin-bottom: 0px;
-}
-.contentItem6 p{
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: #103A3D;
-    margin-left: 40px;
-    margin-top: 10px;
-}
-.contentItem7 h2{
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    color: #010404;
-    margin-left: 40px;
-    margin-bottom: 0px;
-}
-.contentItem7 p{
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    color: #010404;
-    margin-left: 290px;
-    margin-top: 90px;
-} */

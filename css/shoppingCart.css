@@ -121,9 +121,17 @@
     color: #53D9FF;  
 }
 .orderButton{
+    cursor: pointer;
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
+.setMinus{
+    cursor: pointer;
+}
+.setPlus{
+    cursor: pointer;
+}
+
 @media screen and (max-width:1439px) {
     .contentWrap h1{
         font-size: 24px;

@@ -13,6 +13,7 @@
 body,html{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .wrap{
     width: 100%;
@@ -57,6 +58,33 @@ body,html{
 .catalog{
     margin-left: 11vw;
 }
+.catalog:hover .subMenu{
+    transition: 0.6s;
+    display: block;
+    animation: show 1s;
+    animation-fill-mode: forwards;
+}
+.subMenu{
+    opacity: 0;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    padding-left: 0.5vw;
+    transition: 0.6s;
+}
+.subMenu li{
+    text-align: stretch;
+    margin-top: 1vh;
+    float: none;
+}
+.subMenu a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #FFFFFF;
+}
 .leftNav a, .rightNav a{
     color: #FFFFFF;
     font-size: 1.25vw;
@@ -86,6 +114,9 @@ body,html{
 .navIcons a:hover .shopBag, .navIcons a:hover .geoLocation, .navIcons a:hover .user{
     fill: #CDF3FF;
 }
+.user{
+    cursor: pointer;
+}
 .menu{
     display: none;
 }
@@ -105,6 +136,9 @@ body,html{
     position: relative;
     animation: appearRight 1s;
 }
+.sendToModels{
+    text-decoration: none;
+}
 .watchCollectionButton, .buy, .orderButton{
     transition: 0.6s;
     position: relative;
@@ -120,6 +154,7 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .watchCollectionButton:hover, .buy:hover, .orderButton:hover{
     color: #CDF3FF;
@@ -239,6 +274,7 @@ body,html{
     justify-content: center;
 }
 .newModel{
+    cursor: pointer;
     position: relative;
     width: 20vw;
     min-width: 230px;
@@ -316,6 +352,7 @@ body,html{
     align-items: center;
 }
 .bestModel{
+    cursor: pointer;
     position: relative;
     width: 18vw;
     min-width: 280px;
@@ -337,9 +374,11 @@ body,html{
 }
 .leftArrow{
     margin-right:2vw ;
+    cursor: pointer;
 }
 .rightArrow{
     margin-left:2vw ;
+    cursor: pointer;
 }
 .sliderPoints{
     display: flex;
@@ -353,6 +392,7 @@ body,html{
     border-radius: 50%;
     background:#E4F9FF;
     transition: 0.4s;
+    cursor: pointer;
 }
 .sliderPoint:hover{
     transition: 0.4s;
@@ -452,6 +492,7 @@ body,html{
 .footer{
     margin-top: 8vh;
     margin-bottom: 10vh;
+    margin-left: 5.5vw;
     width: 75vw;
     display: flex;
     justify-content: space-between;
@@ -499,7 +540,7 @@ body,html{
     align-items: center;
     opacity: 0;
     position: absolute;
-
+    z-index: 9999;
     position: fixed;
     right: 0;
     height: 100%;
@@ -612,6 +653,7 @@ body,html{
   }
 
   .modalWindowBackground, .authModalWindowBackground{
+    z-index: 9999;
         opacity: 0;
         visibility: hidden;
       display: flex;
@@ -623,6 +665,7 @@ body,html{
       background-color: rgba(0, 0, 0, 0.8);
   }
   .modalWindow, .authModalWindow{
+    z-index: 9999;
       opacity: 0;
       visibility: hidden;
       position: relative;
@@ -907,6 +950,7 @@ body,html{
     }
     .footer{
         justify-content: center;
+        margin-left: 0vw;
     }
     .footerNav{
         margin:0vh 5vw 0vh 5vw;
