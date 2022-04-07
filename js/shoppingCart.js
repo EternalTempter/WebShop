@@ -49,6 +49,7 @@ window.addEventListener('DOMContentLoaded',function(){
                             <span>1</span>
                             <img src="images/plus.png" class="setPlus">
                         </div>
+                        <a class="removeFromShoppingCart">Удалить из корзины</a>
                     </div>
                 </div>`;
                 }
@@ -77,6 +78,12 @@ window.addEventListener('DOMContentLoaded',function(){
                 document.querySelector('.totalPrice').textContent = `${getSumOfAllWatches()} €`;
             });
         });
+        document.querySelectorAll('.removeFromShoppingCart').forEach(button =>{
+            button.addEventListener('click',function(){
+                sendDeleteRequest(JSON.stringify({name: button.parentNode.childNodes[1].textContent}));
+                setTimeout(() => showDataOnPage(),100);
+            })
+        });
     }
     function getSumOfAllWatches(){
         let total = 0;
@@ -84,5 +91,16 @@ window.addEventListener('DOMContentLoaded',function(){
             total += ((Number(watchesPrice.textContent.replace(' €','').replace(' ','')) / Number(watchesPrice.nextElementSibling.childNodes[5].textContent)) * (Number(watchesPrice.nextElementSibling.childNodes[5].textContent))); 
         });
         return total;
+    }
+    async function sendDeleteRequest(content){
+        return await fetch(`ajax.php?do=deleteData`, {
+                    method: 'POST',
+                    headers : {
+                        "Content-Type": "application/json;charset=utf-8",
+                    },
+                    body: content
+        })
+        .then(response => response.json())
+        .then(json => console.log(json));
     }
 });

@@ -120,6 +120,12 @@
     font-size: 2vw;
     color: #53D9FF;  
 }
+.removeFromShoppingCart{
+    font-size: 18px;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+}
 .orderButton{
     cursor: pointer;
     margin-top: 10vh;
