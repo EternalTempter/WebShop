@@ -5,27 +5,23 @@ let authModalWindowBackground = document.querySelector('.authModalWindowBackgrou
 let authModalWindow = document.querySelector('.authModalWindow');
 let closeModalWindowButton = document.querySelector('.closeModalWindow');
 let closeAuthModalWindow = document.querySelector('.closeAuthModalWindow');
+let burgerMenuRegistration = document.querySelector('.burgerMenuRegistration');
+let burgerMenuAuthorization = document.querySelector('.burgerMenuAuthorization');
 let modalWindowOpen = false;
 modalWindowLink.addEventListener('click', () => {
-    modalWindowBackground.classList.add('opened');
-    modalWindow.classList.add('opened');
-    document.querySelector('.banner').style.paddingBottom = '82.3vh';
-    document.querySelector('.mainLabel').classList.toggle('off');
-    document.querySelector('.watchCollectionButton').classList.toggle('off');
-    modalWindowOpen = true;
-    document.body.style.overflow = 'hidden';
+    openModalWindow(modalWindow,modalWindowBackground);
+});
+burgerMenuRegistration.addEventListener('click', () => {
+    openModalWindow(modalWindow,modalWindowBackground);
+});
+burgerMenuAuthorization.addEventListener('click', () => {
+    openModalWindow(authModalWindow,authModalWindowBackground);
 });
 document.querySelector('.enterAccount').addEventListener('click', function(){
     console.log('asdf');
     closeModalWindow(modalWindow,modalWindowBackground);
     setTimeout(() => {
-        authModalWindowBackground.classList.add('opened');
-        authModalWindow.classList.add('opened');
-        document.querySelector('.banner').style.paddingBottom = '82.3vh';
-        document.querySelector('.mainLabel').classList.toggle('off');
-        document.querySelector('.watchCollectionButton').classList.toggle('off');
-        modalWindowOpen = true;
-        document.body.style.overflow = 'hidden';
+        openModalWindow(authModalWindow,authModalWindowBackground);
     }, 400)
 });
 closeAuthModalWindow.addEventListener('click', () => {
@@ -57,8 +53,21 @@ function closeModalWindow(currentModalWindow,currentModalWindowBackground){
         currentModalWindow.classList.remove('hide');
         currentModalWindowBackground.classList.remove('hide');
     }, 800)
-    modalWindowOpen = false
-    document.querySelector('.banner').style.paddingBottom = '34vh';
-    document.querySelector('.mainLabel').classList.toggle('off');
-    document.querySelector('.watchCollectionButton').classList.toggle('off');
+    modalWindowOpen = false;
+    if(location.href == 'http://webshop/main.html' || location.href == 'http://webshop/main.html#'){
+        document.querySelector('.banner').style.paddingBottom = '34vh';
+        document.querySelector('.mainLabel').classList.toggle('off');
+        document.querySelector('.watchCollectionButton').classList.toggle('off');
+    }
+}
+function openModalWindow(currentModalWindow,currentModalWindowBackground){
+    currentModalWindowBackground.classList.add('opened');
+    currentModalWindow.classList.add('opened');
+    if(location.href == 'http://webshop/main.html' || location.href == 'http://webshop/main.html#'){
+        document.querySelector('.banner').style.paddingBottom = '82.3vh';
+        document.querySelector('.mainLabel').classList.toggle('off');
+        document.querySelector('.watchCollectionButton').classList.toggle('off');
+    }
+    modalWindowOpen = true;
+    document.body.style.overflow = 'hidden';
 }

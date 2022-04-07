@@ -46,17 +46,18 @@
             <input type="text">
             <span>Пароль</span>
             <input type="text">
-            <button>Войти</button> 
+            <a href="personalArea.html"><button>Войти</button></a> 
             <a href="" class="isForgetPassword">Забыли пароль?</a>
         </div>
     </div>
     <div class="burgerMenu">
         <ul>
-            <li><a href="#" class="burgerMenuLink">Главная</a></li>
-            <li><a href="#" class="burgerMenuLink">Каталог</a></li>
-            <li><a href="#" class="burgerMenuLink">О нас</a></li>
-            <li><a href="#" class="burgerMenuLink">Вход</a></li>
-            <li><a href="#" class="burgerMenuLink">Регистрация</a></li>
+            <li><a href="main.html" class="burgerMenuLink">Главная</a></li>
+            <li><a href="contentHolder.html" class="burgerMenuLink">Каталог</a></li>
+            <li><a href="shoppingCart.html" class="burgerMenuLink">Корзина</a></li>
+            <li><a href="aboutUs.html" class="burgerMenuLink">О нас</a></li>
+            <li><a href="#" class="burgerMenuLink burgerMenuAuthorization">Вход</a></li>
+            <li><a href="#" class="burgerMenuLink burgerMenuRegistration">Регистрация</a></li>
         </ul>
     </div>
     <div class="wrap">
@@ -64,12 +65,12 @@
             <div class="banner">
                 <div class="header">
                     <ul class="leftNav">
-                        <li class="watches"><a href="#">Часы</a></li>
+                        <li class="watches"><a href="main.html">Главная</a></li>
                         <li class="catalog"><a href="contentHolder.html">Каталог</a></li>    
                     </ul>
-                    <img src="images/logo.png" class="logo">
+                    <a href="main.html"><img src="images/logo.png" class="logo"></a> 
                     <ul class="rightNav">
-                        <li class="aboutUs"><a href="#">О нас</a></li>
+                        <li class="aboutUs"><a href="aboutUs.html">О нас</a></li>
                         <li>
                             <div class="navIcons">
                                 <a href="shoppingCart.html">
@@ -269,8 +270,8 @@
             <div class="copyright">© Все права защищены</div>
         </div>
     </div>
-        <script src="js/slider.js"></script>
-        <script src="js/burgerMenu.js"></script>
-        <script src="js/modalWindow.js"></script>
+    <script src="js/burgerMenu.js"></script>
+    <script src="js/modalWindow.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
