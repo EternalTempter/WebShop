@@ -28,6 +28,10 @@ document.querySelector('.enterAccount').addEventListener('click', function(){
         document.body.style.overflow = 'hidden';
     }, 400)
 });
+closeAuthModalWindow.addEventListener('click', () => {
+    closeModalWindow(authModalWindow,authModalWindowBackground);
+    document.body.style.overflow = 'scroll';
+});
 closeModalWindowButton.addEventListener('click', () => {
     closeModalWindow(modalWindow,modalWindowBackground);
     document.body.style.overflow = 'scroll';
@@ -35,6 +39,12 @@ closeModalWindowButton.addEventListener('click', () => {
 modalWindowBackground.addEventListener('click', (event) => {
     if(event.target.classList.contains('modalWindowBackground')){
         closeModalWindow(modalWindow,modalWindowBackground);
+        document.body.style.overflow = 'scroll';
+    }
+});
+authModalWindowBackground.addEventListener('click', (event) => {
+    if(event.target.classList.contains('authModalWindowBackground')){
+        closeModalWindow(authModalWindow,authModalWindowBackground);
         document.body.style.overflow = 'scroll';
     }
 });

@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded',function(){
     function getSumOfAllWatches(){
         let total = 0;
         document.querySelectorAll('#watchesPrice').forEach(watchesPrice => {
-            total += ((Number(watchesPrice.textContent.replace(' €','').replace(' ',''))) * (Number(watchesPrice.nextElementSibling.childNodes[5].textContent))); 
+            total += ((Number(watchesPrice.textContent.replace(' €','').replace(' ','')) / Number(watchesPrice.nextElementSibling.childNodes[5].textContent)) * (Number(watchesPrice.nextElementSibling.childNodes[5].textContent))); 
         });
         return total;
     }

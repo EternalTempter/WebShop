@@ -152,24 +152,27 @@
     background:#02AFBA;
     color: #FFFFFF;
 }
-
 .backCard p{
+    height: 45%;
+    padding-top: 60px;
     font-family: 'Roboto', sans-serif;
     color: #102425;
     font-size: 16px;
-    padding-top: 11.5vh;
     text-align: left;   
 }
 .backCard a{
+    bottom: 15px;
+    right: 1px;
+    position: absolute;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     color: #000000;
-    padding-top: 31vh;  
     text-align: right;  
     margin-right: 1.5vw;
+    padding-top: 10%;
 }
 
 @media screen and (max-width:1439px) {
@@ -185,6 +188,11 @@
     .card{
         min-height: 300px;
     }
+    .backCard p{
+        font-size: 14px;
+        padding-top: 90px;
+    }
+    
 }
 @media screen and (max-width:768px) {
     .card h3{
@@ -203,5 +211,9 @@
     }
     .categoryButton{
         font-size: 20px;
+    }
+    .backCard p{
+        font-size: 14px;
+        padding-top: 120px;
     }
 }

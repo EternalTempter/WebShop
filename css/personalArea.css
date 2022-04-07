@@ -12,15 +12,17 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top:8vh;
 }
 .content{
-    width: 1170px;
     min-width: 1170px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .leftContent{
+    min-width: 700px;
+    width: 48vw;
     display: flex;
     flex-wrap: wrap;
 }   
@@ -34,6 +36,7 @@
     min-height: 250px;
     max-width: 470px;
     max-height: 250px;
+    min-width: 300px;
 }
 .userHeader{
     display: flex;
@@ -57,7 +60,7 @@
 }
 .delivery{
     width: 19.3vw;
-    min-width: 270px;
+    min-width: 290px;
     min-height: 250px;
     max-width: 370px;
     max-height: 250px;
@@ -152,6 +155,7 @@
 .cards{
     position: relative;
     width: 24.5vw;
+    min-width: 300px;
     min-height:176px;
     max-width: 470px;
     margin-top: 30px;
@@ -173,6 +177,7 @@
     max-width: 370px;
     width: 19.3vw;
     min-height:176px;
+    min-width: 290px;
     margin:30px 30px 0px 30px;
 }
 .purchases h2{
@@ -194,14 +199,58 @@
 .purchasesHistory{
     width: 39vw;
     min-height: 176px;
+    min-width: 300px;
     max-width: 670px;
     margin-top: 30px;
 }
 .moneySpent{
+    min-width: 300px;
     width: 28vw;
     max-width: 470px;
     min-height: 176px;
     margin:30px 0px 0px 30px;
+}
+@media screen and (max-width:1489px) {
+    .discount{
+        display: none;
+    }
+    .leftContent{
+        width: 50vw;
+    }
+}
+@media screen and (max-width:1440px) {
+    .leftContent{
+        justify-content: center;
+    }
+    .content{
+        flex-flow: column;
+        align-items: center ;
+    }
+    .userHeader p, .userInfo p, .delivery p, .paymentCard p, .purchasesHistory p, .moneySpent p{
+        font-size: 20px;
+    }
+    .delivery h2, .cards h2, .purchases h2, .purchasesHistory h2, .moneySpent h2{
+        font-size: 24px;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .leftContent{
+        flex-flow: column;
+        margin-left: 35%;
+    }
+    .purchases{
+        margin: 30px 0px 30px 0px;
+    }
+    .bottomContent{
+        flex-flow: column;
+    }
+    .moneySpent{
+        margin: 30px 0px 0px 0px;
+    }
+    .delivery{
+        margin: 30px 0px 0px 0px;
+    }
 }
 /* .contentItem6 h2{
     font-family: 'Roboto',sans-serif;

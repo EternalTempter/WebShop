@@ -631,6 +631,7 @@ body,html{
       display: flex;
       flex-flow: column;
       width: 22vw;
+      min-width: 270px;
       padding: 3vh 4vw 3vh 4vw;
   }
   .authModalWindow{
@@ -738,6 +739,16 @@ body,html{
 }
 
 @media screen and (max-width:1440px) {
+    .modalWindow p, .authModalWindow p{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .modalWindow span, .authModalWindow span{
+        font-size: 14px;
+    }
+    .modalWindow button, .authModalWindow button{
+        font-size: 14px;
+    }
     .banner h1{
         font-size: 26px;
     }
@@ -777,7 +788,7 @@ body,html{
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {  
     .bestModel1{
         display: none;
     }
