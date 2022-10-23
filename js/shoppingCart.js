@@ -1,48 +1,21 @@
 window.addEventListener('DOMContentLoaded',function(){
 
-    let allServerData;
-    let userServerData;
-
-    showDataOnPage();
-
-    function showDataOnPage(){
-        getAllData();
-        getUserData();
-        setTimeout(() => buildCards(),200);
-    }
-    function getAllData(){
-        fetch('data.json')
-            .then(response => response.json())
-            .then(json => setAllData(json));
-    }
-    function getUserData(){
-        fetch('ajax.php?do=getShopBagItems')
-            .then(response => response.json())
-            .then(json => setUserData(json))
-    }
-    function setAllData(data){
-        allServerData = data;
-    }
-    function setUserData(data){
-        userServerData = data;
-    }
+    buildCards();
         
     function buildCards(){
         let content = document.querySelector('.contentWrap');
         content.innerHTML = '<h1>Корзина</h1>';
-            Array.from(Object.keys(allServerData.catalog)).forEach(watchesCompany => {
-                Array.from(Object.keys(allServerData.catalog[watchesCompany])).forEach(watchesName => {
-                if(userServerData.includes(watchesName)){
-                content.innerHTML += 
+        console.log(JSON.parse(localStorage.getItem('bag')));
+        JSON.parse(localStorage.getItem('bag')).forEach(watches => {
+            content.innerHTML += 
                 `<div class="shopCartItemLine"></div>
                     <div class="shopCartItem">
                     <div class="shopCartItemHolder">
-                        <img src="${allServerData.catalog[watchesCompany][watchesName].imageUrl}">
+                        <img src="${watches.imageUrl}">
                     </div>
                     <div class="shopCartInfoHolder">
-                        <h3>${watchesName}</h3>
-                        <p>${allServerData.catalog[watchesCompany][watchesName].desc}</p>
-                        <span id="watchesPrice">${allServerData.catalog[watchesCompany][watchesName].price}</span>
+                        <h3>${watches.name}</h3>
+                        <span id="watchesPrice">${watches.price}</span>
                         <div class="shopCartAmount">
                             <p>Количество</p>
                             <img src="images/minus.png" class="setMinus">
@@ -52,9 +25,8 @@ window.addEventListener('DOMContentLoaded',function(){
                         <a class="removeFromShoppingCart">Удалить из корзины</a>
                     </div>
                 </div>`;
-                }
-            });
         });
+
         content.innerHTML += '<div class="miniShopCartItemLine"></div>';
         content.innerHTML += `<p class="totalPriceWrap">Итого: <span class="totalPrice">${getSumOfAllWatches()} €</span></p>`;
         content.innerHTML += '<div class="orderButton">Заказать</div>';
@@ -80,8 +52,14 @@ window.addEventListener('DOMContentLoaded',function(){
         });
         document.querySelectorAll('.removeFromShoppingCart').forEach(button =>{
             button.addEventListener('click',function(){
-                sendDeleteRequest(JSON.stringify({name: button.parentNode.childNodes[1].textContent}));
-                setTimeout(() => showDataOnPage(),100);
+                let bag = JSON.parse(localStorage.getItem('bag'));
+                let filteredBag = bag.filter(elem => elem.name !== button.parentNode.parentNode.childNodes[3].childNodes[1].textContent);
+                localStorage.setItem('bag', JSON.stringify(filteredBag))
+
+                document.querySelector('.contentWrap').removeChild(button.parentNode.parentNode.previousElementSibling);
+                document.querySelector('.contentWrap').removeChild(button.parentNode.parentNode);
+
+                document.querySelector('.totalPrice').textContent = `${getSumOfAllWatches()} €`;
             })
         });
     }
@@ -91,16 +69,5 @@ window.addEventListener('DOMContentLoaded',function(){
             total += ((Number(watchesPrice.textContent.replace(' €','').replace(' ','')) / Number(watchesPrice.nextElementSibling.childNodes[5].textContent)) * (Number(watchesPrice.nextElementSibling.childNodes[5].textContent))); 
         });
         return total;
-    }
-    async function sendDeleteRequest(content){
-        return await fetch(`ajax.php?do=deleteData`, {
-                    method: 'POST',
-                    headers : {
-                        "Content-Type": "application/json;charset=utf-8",
-                    },
-                    body: content
-        })
-        .then(response => response.json())
-        .then(json => console.log(json));
     }
 });

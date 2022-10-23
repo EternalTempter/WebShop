@@ -11,6 +11,9 @@
     flex-flow: column;
     align-items: center;
 }
+.content a {
+    color: #CDF3FF;
+}
 .createDate{
     align-self: flex-start;
     padding-top: 7vh;

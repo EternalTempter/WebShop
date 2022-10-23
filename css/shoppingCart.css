@@ -1,5 +1,11 @@
 @import url(main.css);
-
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: #1B1A1A;
+}
 .wrap{
     background: #1B1A1A;
 }
